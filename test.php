@@ -16,12 +16,12 @@ if ($b > $a) {
 
 if ($b >= $c) {
     // output the appropriate result
-    echo "$b is is equal to $c\n";
+    echo "$b is greater than or equal to $c\n";
 }
 
 if ($b <= $c) {
     // output the appropriate result
-    echo "$b is is equal to $c\n";
+    echo "$b is less than or equal to $c\n";
 }
 
 if ($b == $c) {
