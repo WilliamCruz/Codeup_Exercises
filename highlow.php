@@ -9,10 +9,9 @@
 	// add to the guess count
 // end the loop
 	// if guess and the number are the same say "winner" and end game
-fwrite(STDOUT, 'Guess a number between 1 and 10.' . "\n");
+fwrite(STDOUT, "Guess a number between $argv[1] and $argv[2]." . "\n");
 
-$number = rand(0, 10);
-
+$number = mt_rand($argv[1], $argv[2]);
 // Get the input from user
 
 $guess = 0;
