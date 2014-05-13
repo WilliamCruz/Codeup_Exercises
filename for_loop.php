@@ -7,8 +7,13 @@ echo "Now enter the ending number.\n";
 
 $high = trim(fgets(STDIN));
 
-for ($n = $low; $n <= $high; $n++) {
-	echo "$n\n";
+echo "Enter increment \n";
+
+$inc = trim(fgets(STDIN));
+
+
+for ($n = $low; $n <= $high; $n = $n + $inc) {
+	echo "\n$n\n";
 }
 
 // for ($en = 100; $en <= 100; $en -= 1); {
