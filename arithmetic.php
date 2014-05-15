@@ -38,3 +38,20 @@ divide(4,5);
 divide(65,88);
 divide(37,34);
 divide(3.5,20);
+
+function modulus($a, $b) {
+	echo $a % $b . PHP_EOL;
+}
+
+modulus(4,5);
+modulus(65,88);
+modulus(37,34);
+modulus(3.5,20);
+
+
+
+
+
+
+
+
