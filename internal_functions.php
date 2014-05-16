@@ -32,5 +32,5 @@ $ser = serialize($array) ;
 
 // Unserialize the array $array, and output the results
 
-// $uns = unserialize($ser);
-//  	var_dump ($uns); 
+$uns = unserialize($ser);
+ 	var_dump ($uns); 
