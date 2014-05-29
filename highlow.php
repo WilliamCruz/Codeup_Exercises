@@ -15,7 +15,7 @@ if (!is_numeric($argv[1]) || !is_numeric($argv[2])) {
 	exit(1);
 }
 if ($argc == 3) {
-} else {$argv[1] != 0 || $argv[2] != 0};
+} else if($argv[1] != 0 || $argv[2] != 0) {
 	$argv++;
 
 }
@@ -24,8 +24,8 @@ fwrite(STDOUT, "Guess a number between $argv[1] and $argv[2]." . "\n");
 
 $number = mt_rand($argv[1], $argv[2]);
 // Get the input from user
-$argv[1] = min(1);
-$argv{2} = max(100);
+// $argv[1] = min(1);
+// $argv[2] = max(100];
 $guess = 0;
 $nug = 0;
 
