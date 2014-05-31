@@ -2,16 +2,19 @@
 //William Cruz
 //5/29/14
 //Control Structures II - switch lesson
+//Corrected and pushed to git 5/31/14
 
 // Set the default timezone
-// date_default_timezone_set('America/Chicago');
 
 // // Get Day of Week as number
 // // 1 (for Monday) through 7 (for Sunday)
 // $day_of_week = date('N');
 // // $day_of_week = 2;
+
+date_default_timezone_set('America/Chicago');
 $day_of_week = date('N');
-switch($day_of_week {
+
+switch($day_of_week) {
     case 1:
     	echo 'Monday.' . PHP_EOL; 
     	break; 
@@ -35,6 +38,7 @@ switch($day_of_week {
     	break;
     default:
     	echo 'unknown.' . PHP_EOL;
+        break;
 }
     
 
