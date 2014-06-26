@@ -1,55 +1,38 @@
 <?php
 
 function add($a, $b) {
-    if (is_numeric($a) && is_numeric($b)) {
-		echo $a + $b . PHP_EOL;
-  } else {
-		echo 'ERROR: Both arguments should be numbers' . PHP_EOL;
-	}
+	error_msg($a, $b);
+	return $a + $b;	
 }
-
-add(5, 2);
-
-
 function subtract($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
-		echo $a - $b . PHP_EOL;
-  } else {
-  		echo 'ERROR: Both arguments should be numbers' . PHP_EOL;
-    } 
-    // Add code here
+	error_msg($a, $b);
+	return $a - $b;
 }
-
-subtract(4,7);
-
 function multiply($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
-		echo $a * $b . PHP_EOL;   
-  } else {
-  		echo 'ERROR: Both arguments should be numbers' . PHP_EOL;
-    }   // Add code here 
+	error_msg($a, $b);
+	return $a * $b;    
 }
-multiply(4,5);
-
 function divide($a, $b) {
-
-	if (is_numeric($a) && is_numeric($b) && $b != 0) {
-		echo $a / $b . PHP_EOL;
-	} else {
-		echo "ERROR" . PHP_EOL;
+	error_msg($a, $b);
+	return $a / $b;
+}
+function modulus($a, $b) {
+	error_msg($a, $b);
+  	return $a % $b; 
+}	
+//checking for numeric input, echo error msg if not numeric otherwise, continue
+function error_msg($a, $b) {
+	if (!is_numeric($a) || !is_numeric($b)) {
+		echo "$a and $b should both be a number" . PHP_EOL;
 	}
 }
-divide(0,5);
+echo add(5, 0) . PHP_EOL;
+echo subtract(4,5) . PHP_EOL;
+echo multiply(4,5) . PHP_EOL;
+echo divide(0,5) . PHP_EOL;
+echo modulus(4,2) . PHP_EOL;
+?>
 
-function modulus($a, $b) {
-	if (is_numeric($a) && is_numeric($b)) {
-		echo $a % $b . PHP_EOL;
-  } else {
-  		echo 'ERROR: Both arguments should be numbers' . PHP_EOL;
-  	}
-}	
-
-modulus(4,2);
 
 
 
