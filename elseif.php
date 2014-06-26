@@ -21,24 +21,15 @@ if ($b >= $c) {
     echo "$b is less than or equal to $c\n";
 }
 
-// combine the next 4 conditionals into 
-// one if/else/elseif block that checks in order for:
-// identical, equal, not identical, not equal
 if ($b == $c) {
-    // output the appropriate result
     echo "$b is equal to $c\n";
 } elseif ($b === $c) {
-    // output the appropriate result
     echo "$b is identical to $c\n";
 }
 
 if ($b != $c) {
-    // output the appropriate result
     echo "$b is not equal to $c\n";
 } elseif ($b !== $c) {
-    // output the appropriate result
     echo "$b is not equal to value and not type $c\n";
 }
 ?>
-
-
