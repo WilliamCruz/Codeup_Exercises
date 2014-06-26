@@ -1,23 +1,11 @@
 <?php
-
 //William Cruz
 //5/29/14
-//Review/ Correct foreach.php
-
 
 $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
 
-foreach ($things as $thing) {
+foreach ($things as $thing) 
+{
 	if (is_scalar($thing)) {
-	}	echo "{$thing}" . PHP_EOL;
+}	echo "{$thing}" . PHP_EOL;
 } 
-
-
-
-
-
-
-
-
-
-
