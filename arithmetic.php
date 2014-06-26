@@ -32,13 +32,3 @@ echo multiply(4,5) . PHP_EOL;
 echo divide(0,5) . PHP_EOL;
 echo modulus(4,2) . PHP_EOL;
 ?>
-
-
-
-
-
-
-
-
-
-
