@@ -5,8 +5,9 @@
 
 // Set the default timezone
 date_default_timezone_set('America/Chicago');
+//Set the day using date
 $day_of_week = date('N');
-
+//switch argument
 switch($day_of_week) {
     case 1:
         echo 'Monday.' . PHP_EOL; 
