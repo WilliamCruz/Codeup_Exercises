@@ -20,9 +20,6 @@ $query = 'CREATE TABLE National_Parks (
     PRIMARY KEY (id)
 )';
 
-// Run query, if there are errors they will be thrown as PDOExceptions
-
-
 $National_Parks =[
 		['name' => 'Acadia', 'location' => 'Maine', 'date_established' => 'Frebruary 26, 1919', 'area' => '47389.67'],
 		['name' => 'American Sanoma', 'location' => 'American Sanoma', 'date_established' => 'October 31, 1988', 'area' => '9000.00'],
